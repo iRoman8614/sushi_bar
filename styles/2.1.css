@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: Arial;
+    background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+    margin: 0px;
+}
+/* комментарий */
+
+header {
+    background-color: white;
+    height: 80pt;
+}
+
+.pos1, .pos2, .pos3, .pos4 {
+    position: absolute;
+}
+
+.pos1 {
+    left: 0pt;
+    top: 0pt;
+    width: 140pt;
+}
+
+.pos1 img {
+    height: 80pt;
+}
+
+.pos2 {
+    left: 140pt;
+    top: 29pt;
+    right: 0pt;
+}
+
+.pos2 h1 {
+    font: bold italic 42pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10pt;
+    margin: 0px;
+    background-color: darksalmon;
+}
+
+.pos3 {
+    left: 140pt;
+    top: 4pt;
+    right: 70pt;
+}
+
+.pos3 h1 {
+    font: bold 24pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 6pt;
+    margin: 0pt;
+    color: darksalmon;
+}
+
+.pos4 {
+    top: 0pt;
+    right: 20pt;
+}
+
+p {
+    font-size: 14pt !important;
+}
+
+p .greeting {
+    font-size: 24px;
+}
+
+.advertising {
+    margin-left: 30pt;
+}
+
+footer {
+    text-align: right;
+    background-color: white;
+    height: 120pt;
+    position: relative;
+}
+
+main {
+    text-align: justify;
+}
+
+.advertising div {
+    font-size: 12pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+
+.bigger {
+    font-size: 16pt;
+}
+
+table.pricelist td, table.pricelist th {
+    border: gray thin solid;
+    padding: 4px;
+}
+
+table.catalog {
+    border-collapse: collapse;
+}
+
+table.catalog td {
+    border-top: black thin dotted;
+    border-bottom: black thin dotted;
+    padding: 10px;
+}
+
+table.catalog img {
+    width: 200px;
+}
+
+table.pricelist thead {
+    color: white;
+    background-color: grey;
+}
+
+table.pricelist tfoot {
+    font-style: italic;
+    text-align: right;
+}
+
+nav {
+    width: 170px;
+    padding: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav div, nav a {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav a {
+    display: block;
+}
+
+table.catalog tr:first-child td {
+    border-top: none;
+    width: 50%;
+}
+
+table.catalog tr:last-child td {
+    border-bottom: none;
+}
+
+table.catalog td p:first-of-type::first-letter {
+    font-size: 24pt;
+}
+
+table.pricelist th {
+    text-align: center;
+}
+
+table.pricelist tbody td:last-child:not(:only-child) {
+    background-color: lightgray;
+}
+
+table.catalog h3 {
+    font-family: "Caviar Dreams";
+    font-size: 20pt;
+}
+
+table.catalog h3::after {
+    content: ":";
+    font-variant: small-caps;
+    letter-spacing: 2pt;
+}
+
+table.catalog td p::first-letter {
+    vertical-align: text-top;
+}
+
+
+table.catalog td p {
+    vertical-align: top;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+table.catalog {
+    width: 70%;
+    min-width: 12cm;
+}
+
+table.catalog img {
+    width: 100%;
+}
+
+
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+form {
+    width: 400px;
+    padding: 0px 10px;
+    border: thin dotted darkgrey;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    font: bold 20pt Verdana;
+    text-transform: uppercase;
+    width: 250px;
+    border: thick solid black;
+    border-radius: 0px;
+}
+
+input[type=image] {
+    border-style: none;
+}
+
+input:invalid {
+    background-color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+input:valid {
+    background-color: green;
+}
+
+div#tablecont {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div#tablecont > div {
+    display: table-row;
+}
+
+div#tablecont > div > * {
+    display: table-cell;
+    vertical-align: top;
+}
+

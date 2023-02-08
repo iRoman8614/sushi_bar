@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Суши-бар Йокогама. Сашими, суши, роллы, напитки">
+    <meta name="keywords" content="суши-бар, Йокогама, сашими, суши, ролл">
+    <meta name="author" content="Baranovskii Roman">
+    <meta name="generator" content="Visual studio code">
+    <title>Заказ столика :: Йокогама: суши-бар</title>
+    <link href="styles/2.1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="pos1"><img src="images/sushi.jpg"></div>
+        <div class="pos2"><h1>Йокогама</h1></div>
+        <div class="pos3"><h1>Суши-бар</h1></div>
+    </header>
+    <!--<nav>
+        <div><a href="index.html">Главная</a></div>
+        <div><a href="sashimi.html">Сашами</a></div>
+        <div><a href="sushi.html">Суши</a></div>
+        <div><a href="roll.html">Роллы</a></div>
+        <div><a href="">Соусы</a></div>
+        <div><a href="price-list.html">Прайс-лист</a></div>
+        <div><a href="order.html">Бронь столика!</a></div>
+        <div><a href="takeaway.html">Заказать с собой</a></div>
+    </nav>-->
+    <main>
+        <div><a href="index.html">Главная</a></div>
+        <h2>Заказ столиков</h2>
+        <form action="mailto:order@yokogama.ru" method="post" enctype="text/plain">
+            <p>
+                <label for="name">Как к Вам обращаться?</label><br>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="phone">Укажите контактный телефон</label><br>
+                <input type="text" name="phone" id="phone" required>
+            </p>
+            <p>
+                <label for="time">Выберите время</label><br>
+                <input type="time" name="time" id="time" required value="00:00">
+            </p>
+            <fieldset>
+                <legend>Укажите сведения о Вас и Вашей компании</legend>
+                <p>
+                    <label for="cnt">На сколько человек заказываете столик?</label><br>
+                    <input type="radio" name="cnt" id="cnt" value="1">1 &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="cnt" id="cnt" value="2">2 &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="cnt" id="cnt" value="more">3 и более &nbsp; &nbsp; &nbsp;
+                </p>
+                <p>
+                    <input type="checkbox" name="children" valui="*"> С детьми
+                </p>
+            </fieldset>
+            <button type="submit">
+                <img src="images/order_button.jpg">
+            </button>
+        </form>
+    </main>
+    <footer>
+        <div class="pos4">
+            <p class="greeting">Ждем Вас!</p>
+            <!-- Комментарии -->
+            <address><em>Наш адрес:<br>ул. Зеленая, 17.</em></address>
+            <copy>У вас должно получиться так:<br> &copy; Все права защищены.</copy>
+        </div>
+    </footer>
+</body>
+</html>
